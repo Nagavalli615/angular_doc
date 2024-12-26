@@ -2,3 +2,38 @@ need to create ng applicatoion
 use ng new applicationName
 to create ng component 
 use ng g c componentName 
+use ng serve to run the application
+
+
+<app-root></app-root> this is a custom component selector 
+ 
+previous versions of angular components or not a standalone components 
+angular 17 after components are standalone components
+
+
+if we want to render another component data in ui 
+we need to connect index.html file and component file 
+for that we usee main.ts file 
+
+add component name which we render
+bootstrapApplication(AppComponent, appConfig)
+  .catch((err) => console.error(err));
+in this
+bootstrapApplication( NavbarComponent)
+  .catch((err) => console.error(err));
+
+add like this 
+
+
+FOR NESTED COMPONENTS:
+======================
+
+we if want to render all components use app.component.html 
+
+use selector tag 
+<app-navbar></app-navbar>
+
+and import this component in app.component.ts file imports array 
+
+imports:[navbarcomponent] like this 
+to escape from errors 
