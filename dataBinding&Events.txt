@@ -1,0 +1,59 @@
+STRING INTERPOLATION:
+=====================
+
+what we give in ts file render in html file with {{}} in between brases
+
+this is called string interpolation
+
+why we called this string interpolation?
+
+the main reason is what we give inbitween the brases 
+eod it gives string type only 
+
+{{1+2}} if we give like this 
+ans: 3 will display but the type of the 3 is string 
+
+what we give inbetween the brases boolean or string or numaric values 
+eod it convert the data into string
+
+
+PROPERTY BINDING:
+=================
+if want to display imag property from ts o ui 
+use {{}} this 
+
+<img src"what wegivein ts file variable"/>
+this is one way to bind imag 
+
+but better practice is property binding like below
+
+for property binding we use [] 
+use [] for src to bind the image fromts file 
+
+
+
+CLASS BINDING:
+==============
+if we want to apply changes conditionally with css 
+we use class binding 
+
+for this class binding 
+[class.active] = 'isactive'
+
+in this cinario CLASS is property
+ACTIVE is css class 
+ISACTIVE is ts file varible
+
+if we set isactive = true 
+and active {
+backgroundcolour : green}
+
+it will dipplay in ui green clr 
+
+in class binding we do changes with string also 
+
+ <button [class.apple]="fruit == 'apple'">change with string</button> 
+like this 
+
+in ts file fruit:string = 'apple';
+class.apple -- apple is css class styles

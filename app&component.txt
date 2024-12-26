@@ -37,3 +37,6 @@ and import this component in app.component.ts file imports array
 
 imports:[navbarcomponent] like this 
 to escape from errors 
+
+
+
