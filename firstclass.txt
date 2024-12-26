@@ -1,0 +1,4 @@
+need to create ng applicatoion 
+use ng new applicationName
+to create ng component 
+use ng g c componentName 
