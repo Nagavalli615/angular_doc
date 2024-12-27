@@ -57,3 +57,61 @@ like this
 
 in ts file fruit:string = 'apple';
 class.apple -- apple is css class styles
+
+DATABINDING & EVENT HANDLING PART2:
+===================================
+
+STYLE BINDING:
+==============
+ in this style binding we use [style] property 
+
+for example 
+
+ <button [style.background]="isclr?'green':'orange'">clickme</button>
+
+to this style binding we dirrectly change clrs to a property 
+if u add more styles with this style binding 
+search html dom style object in google 
+use what tyle of u dom styles 
+
+EVENT BINDING:
+=============
+for event binding use ().
+
+<button (click)="data()">click event binding</button>
+
+TEMPLATE VARIABLE:
+=================
+with template variab 
+use this template variable # with this
+
+TWOWAY DATA BINDING:
+===================
+we use this approch to manipulating user data 
+send and recive data from component file to html file 
+html file to component file 
+
+<input type="text" [value]="username" #userName (keyup.enter)="updatedname(userName)">
+
+updatedname(userName:any){
+    this.username = userName.value
+    console.log(this.username)
+}
+**THIS IS OLD APPROCH TO TWO WAY DATA BINDING FINDOUT ANGULAR APPROCH BELOW**
+
+second approch:
+===============
+in two way data binding iueing ngmodel
+[(ngModel)] = 'userName'
+we need to import this ngModel in imports in ts file 
+**formsModule**
+
+<input type="text" [(ngModel)]="name" >
+
+
+ONEWAY VS TWOWAY DATA BINDING:
+=============================
+one way data binding will bind data from the component to view
+
+we can pass data from component to view 
+send data from view to component
