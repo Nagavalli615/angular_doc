@@ -1,0 +1,41 @@
+Angular directives:
+==================
+angular directives are classes that add additional behaviour to elements in new angular applications
+they allow you to manipulate the dom directly it is important to for  createing dynamic and interactive web applications.
+
+
+y r directives imp??
+====================
+directives the fundamental concept in angular they anable developers like us to extend functionality of html by creating custom behaviour 
+that can be reuse across our application. so with that dir we can change appearcne,behaviour  and layout of dom element our app more dynamic and userfrendly.
+ 
+
+
+there are 3 types of directives:
+
+	*1. component directive
+	*2. structural directives
+	*3. Attribute directive
+
+COMPONENT DIRECTIVE:
+====================
+these are the most commonly used directives
+a component directivw is essentiolly a custom 
+element with its own view and behaviour.
+every angular component is a direcctive with a 
+template.
+
+
+STRUCTURAL DIRECTIVES:
+======================
+these directives alther the layout of the dom by 
+adding or removeing elements. common examples 
+include ngif,ngfor, and ngswitch.
+
+
+ATTRIBUTE DIRECTIVE:
+===================
+these directive change the appearnce or behaviour of an element,
+component, or another directive.
+common example include ngclass and ngstyle.
+
