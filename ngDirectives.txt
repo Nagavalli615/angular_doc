@@ -32,10 +32,17 @@ these directives alther the layout of the dom by
 adding or removeing elements. common examples 
 include ngif,ngfor, and ngswitch.
 
+we previously use structural directives syntax *ngif , *ngFor , *ngSwitch 
 
+but updates syntax is @if ,@For,@Switch
 ATTRIBUTE DIRECTIVE:
 ===================
 these directive change the appearnce or behaviour of an element,
 component, or another directive.
 common example include ngclass and ngstyle.
+
+CUSTOM DIRECTIVES:
+=================
+which can create our own custom directives from scratch.
+
 
