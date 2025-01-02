@@ -35,6 +35,37 @@ include ngif,ngfor, and ngswitch.
 we previously use structural directives syntax *ngif , *ngFor , *ngSwitch 
 
 but updates syntax is @if ,@For,@Switch
+
+if we want work with directives import module NgIf in app.component.ts imports.
+in old way if we want use else condion we write another tag for that like
+
+
+<h2 *ngIf="isenable">{{user}}</h2>
+
+<h1 *ngIf="!isenable">user not found</h1>
+
+******************************use ng-template to alternative of ngelse(!isenable)***************
+CHECK NG-TEMPLATE FILE FOR INDETAILED.
+
+
+NEW WAY
+========
+but in new syntax is very simple to define else condition
+
+@if(isenable){
+  <h3 style="color: red;">{{user}}</h3>
+}
+@else{
+  <h3 style="color: green;">{{user}}</h3>
+}
+
+
+
+		NUMBER VALUES CONDITIONS 
+		========================
+
+
+
 ATTRIBUTE DIRECTIVE:
 ===================
 these directive change the appearnce or behaviour of an element,

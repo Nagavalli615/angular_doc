@@ -1,0 +1,18 @@
+ng-template is a custom html tag 
+it render data based on else conditin 
+
+we use to identify this tag with template ref variable 
+follow with # 
+#message like this 
+pass this template ref variable ti tag which we use to if else condion 
+
+ <ng-template #message>
+  this is ng block else condition
+ </ng-template>
+
+<h2 *ngIf="isenable; else message">{{user}}</h2>
+
+Angular's <ng-template> element defines a template that is not rendered by default.
+
+
+***************now we use @else {} in latest versions***************
