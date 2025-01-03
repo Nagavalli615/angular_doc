@@ -63,8 +63,70 @@ but in new syntax is very simple to define else condition
 
 		NUMBER VALUES CONDITIONS 
 		========================
+if directive with number values:
+===============================
+@if(logincount < 4){
+  <button (click)="checkfordata()" >new syntax</button>
+  }
+@if(logincount  == 4){
+  <h1>exceeded 3 attempts</h1>
+}
+logincount = 0;
+checkfordata(){
+  this.logincount ++;
+  console.log(this.logincount);
+}
+
+		STRING VALUES CONDITIONS
+		========================
+
+@if(user == 'nagavalli'){
+  <button style="background-color: brown;">click</button>
+}
+@else{
+  <button style="background-color: red;">click</button>
+}
 
 
+		 NGFOR DIRECTIVE
+		 ===============
+
+when we use this ngFor in old syntax 
+
+<h1 *ngFor="let i of users">{{i}}</h1>
+
+but in new syntax we doesnt use let keyword insted we use track expression and var name 
+
+@for(i of users;track i){
+  <h5>{{i}}</h5>
+}
+
+UNORDERLIST WITH NEW SYNTAX
+============================
+
+<!-- USEING UNORDERLIST WITH FOR IN NEW SYNTAX -->
+<ul>
+@for(i of users;track i){
+  <!-- <h5>{{i}}</h5> -->
+    <li>{{i}}</li>
+}
+</ul>
+
+		FETCH OBJ ARRAYS WITH NGFOR
+		===========================
+ <ul>
+@for(user of userObj; track user){
+  <li>{{user.gmail}}</li>
+}
+</ul>
+
+userObj :Array<any> = [ 
+   {id:1,name:'valli',gmail:'vallikatta226@gmail.com'},
+   {id:2,name:'siva',gmail:'siva@gmail.com'},
+   {id:3,name:'karthik',gmail:'karthik@gmail.com'}
+]
+
+		
 
 ATTRIBUTE DIRECTIVE:
 ===================

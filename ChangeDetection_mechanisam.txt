@@ -1,0 +1,14 @@
+CHANGE DETECTION MANAGEMENT
+		============================
+it changes appear by realtime
+
+<button (click)="addnew()">click to add new user</button>
+
+addnew(){
+  let newuser = {id:5,name:'nagavalli',gmail:'nagavalli@gmail.com'}
+  this.userObj.push(newuser)
+}
+
+with this mechanisam we changes realtime 
+
+

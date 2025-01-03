@@ -17,5 +17,25 @@ Angular's <ng-template> element defines a template that is not rendered by defau
 
 ***************now we use @else {} in latest versions***************
 
-ng-template is a powerful tool in angular that allows us to define template content that can be used later in our application. unlike 
-regular Html elements, ng-template itself will not renderd inside the DOM. we can use it when we need it.
+
+ngtemplateOutlet:
+================
+when we use ngtemplateoutlet 
+firstly import ngTemplateOutlet in app.components.ts file 
+
+with this ngTemplateOutlet we can reus4e a peice of code .
+
+
+
+<ng-template #displaycontent>
+  <button>click</button>
+  <p>its working</p>
+</ng-template>
+
+<h1 [ngTemplateOutlet]="displaycontent">hero</h1>
+
+<h1 [ngTemplateOutlet]="displaycontent">heroien</h1>
+
+<h1 [ngTemplateOutlet]="displaycontent">villain</h1>
+
+we can resue content in ng-template tag evary ehre when we use ngTemplateOutlet.
