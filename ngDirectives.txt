@@ -182,10 +182,52 @@ this empty syntax only used inside the for block
   </li>
   
 }
+
 @empty{
   <p>this is render from empty syntax block</p>
 }
 </ol>
+
+
+useing this empty syntax block we dont have to use any condition to show this msg 
+just use empty block to render the msg in view 
+
+
+		PROPERTIES- FOR LOOP
+		=====================
+$odd : true, if the index is odd.
+$count : the number of the items in the collection.
+$first : true, if the current item is the first in the collection.
+$last : true, if the current item is the last in the collection.
+
+			NG SWITCHCASE
+			=============
+old way syntax approch:
+=======================
+		<!-- NG SWITCH CASE  -->
+<div [ngSwitch]="userrole">
+  <p *ngSwitchCase="'admin'">welcome admin</p>
+  <p  *ngSwitchCase="'user'">welcome user</p>
+  <!-- IT SHOWS BY DEFAULT IF THERE IS NO VALUE BUT THIS IS NOT GOOD PRACTICE -->
+  <p  *ngSwitchCase="''">welcome user</p>
+  <!-- BY DEFAULT RENDER IF THERE IS NO VALUE USE NGSWITCHDEFAULT  -->
+  <P *ngswitchDeafult>value render by default</P>
+</div>
+
+NEW WAY SYNTAX:
+==============
+ @switch(userrole){
+  @case('admin'){
+    <p>welcome admin</p>
+  }
+  @case('user'){
+    <p>welcome user</p>
+  }
+  @default{
+    <p>default value</p>
+  }
+  
+ }
 
 ATTRIBUTE DIRECTIVE:
 ===================
