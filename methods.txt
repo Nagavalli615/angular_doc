@@ -1,0 +1,4 @@
+Splice:
+=======
+an inbuilt methode in javascript that is used to change the content of an array by removeing or replaceing existing elements and/or adding new elements.
+

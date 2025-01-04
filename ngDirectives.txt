@@ -125,8 +125,67 @@ userObj :Array<any> = [
    {id:2,name:'siva',gmail:'siva@gmail.com'},
    {id:3,name:'karthik',gmail:'karthik@gmail.com'}
 ]
+**************************************************
+<!-- <h5 *ngFor="let user of userObj; let i = index">{{i}} {{user.name}} <button (click)="ondelete(user)">delete</button></h5> -->
+<h5 *ngFor="let user of userObj; let i = index">{{i}} {{user.name}} <button (click)="ondelete(i)">delete</button></h5>
 
-		
+<!-- NEW APROACH -->
+<ol>
+@for(user of userObj;track user;let  i = $index){
+ <li>
+    <!--  DELETE WITH INDEX VALUES -->
+    {{user.name}} <button (click)="ondelete(i)">delete</button>
+    <!-- {{user.name}} <button (click)="ondelete(user)">delete</button> -->
+  </li>
+}
+</ol>
+	
+if we want to  delete user based on index in new syntax it is quite diffrent 
+we use $ symbol before to declare value.
+
+
+		ARRAY LENGTH INDEX
+		==================
+we use this in constructor 
+constructor(){
+	this.userObj.length
+} like this know how to use this in ng version look below ngfor count
+
+
+		NGFOR COUNT
+		===========
+@if(userObj.length > 0){
+  <h1 style="color: green;">users are existed in this array</h1>
+}
+@else{
+  <h1 style="color: red;">there is no users in this array</h1>
+}
+{{usercount}} {{user.name}} <button (click)="ondelete(i)">delete</button>
+
+	
+			EMPTY SYNTAX
+			============
+@empty {
+	add anything to display in browser
+}
+
+
+this empty syntax only used inside the for block
+
+<ol>
+@for(user of userObj;track user;let  i = $index;let usercount = $count){
+ <li>
+    <!--  DELETE WITH INDEX VALUES -->
+   <!-- {{userObj.length}} {{user.name}} <button (click)="ondelete(i)">delete</button> <br><br> -->
+    <!-- {{user.name}} <button (click)="ondelete(user)">delete</button> -->
+    {{usercount}} {{user.name}} <button (click)="ondelete(i)">delete</button>
+  </li>
+  
+}
+@empty{
+  <p>this is render from empty syntax block</p>
+}
+</ol>
 
 ATTRIBUTE DIRECTIVE:
 ===================
