@@ -1,4 +1,48 @@
 		Attribute_directives
 		====================
+		STYLE BINDING:
+		==============
+Style binding in Angular allows you to dynamically
+set the inline CSS styles of HTML elements based 
+on component properties or expressions
+
+style-binding:
+=============
+we use to bind styles for block useing [style.color] like this 
+
+<h1 [style.color]="isstyle?'green':'red'" [style.textTransform]="isstyle?'uppercase':'lowerCase'">from attribute binding-- style binding</h1>
+
 ng_style:
 ========
+this is another way to bind diff styles in one object useing [ngStyle].
+
+<h1 [ngStyle]="{'color': isstyle?'pink':'black' , textTransform :isstyle? 'lowercase':'uppercase'  }">from css</h1>
+
+ngClass:
+=======
+this is used to bind css class styles to block 
+
+ <!-- OLDWAY  -->
+<h1 [style.color]="isstyle?'green':'red'" [style.textTransform]="isstyle?'uppercase':'lowerCase'">from attribute binding-- style binding</h1>
+<!-- NEW WAY -->
+<h1 [ngStyle]="{'color': isstyle?'pink':'black' , textTransform :isstyle? 'lowercase':'uppercase'  }">from css</h1>
+ <!--ngClass OLDWAY  -->
+<h1 [class.classBinding]="isstyle" [class.bindingfalse]="!isstyle"> from class binding</h1>
+<!-- ngClass NEW WAY-->
+<h1 [ngClass]="isstyle?'classBinding':'bindingfalse'">this is from ng style</h1>
+
+
+
+******************************************************************************************************************************************************************
+******************************************************************************************************************************************************************
+
+		STRUCTURAL DIRECTIVE VS ATTRIBUTE DIRECTIVE
+		___________________________________________
+STRUCTURAL DIRECTIVE:
+====================
+with the structural directive we can manipulate the DOM by adding and removeing HTML elements to the DOM.
+
+ATRRIBUTE DIRECTIVE:
+===================
+with the attribute directive we can only change the aqppearance of the DOM 
+
