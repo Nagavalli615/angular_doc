@@ -1,0 +1,22 @@
+		parent to child
+		==============
+render data from parent component to child component 
+
+@input:
+=======
+	use input decoratery for pass data to parent to child component
+declare a var in parent comoponent and pass that data to child 
+
+to pass data to child useing [] property binding 
+and declare empty var in child component 
+
+parentComponent:
+	<app-posts-list [postTitle]="apptitle"></app-posts-list>
+ts:
+	  apptitle = 'component_relation';
+
+childcomponent:
+	<p>posts-list works!</p>
+	<h1>{{postTitle}}</h1>
+ts:
+	 @Input() postTitle:string = ''

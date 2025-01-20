@@ -1,0 +1,66 @@
+child-pare
+==========
+	useing two mwthodes to get data from child to parent 
+@ViewChild and @Output decoraters.
+
+childcomponent:
+===============
+create a var in child component 
+pass that child component data to parent
+
+parent component:
+================
+	in parent component use @Viewchild() decor in that () give component 
+from which component we get data 
+after that give any veriable name that carrys child component data.
+
+
+if we console child msg we got undefined 
+because constructor method doesnt fully initi 
+use hook AfterViewInit method allows to complete all the process and console data 
+
+export class AppComponent implements AfterViewInit{
+  apptitle = 'component_relation';
+  appPara = 'app-multidata'
+
+  @ViewChild(PostsListComponent) childmsg : any;
+ constructor(){
+  console.log(this.childmsg)
+ }
+  ngAfterViewInit(): void {
+    console.log(this.childmsg)
+  }
+ 
+}
+
+add implements key word before hook methode.
+
+export class AppComponent implements AfterViewInit{
+  apptitle = 'component_relation';
+  appPara = 'app-multidata'
+ message:string = '';
+  @ViewChild(PostsListComponent) childmsg : any;
+//  constructor(){
+//   console.log(this.childmsg)
+//  }
+  ngAfterViewInit(): void {
+    console.log(this.childmsg)
+    this.message = this.childmsg.childCompData
+				 ==============
+  }
+ 
+}
+declare a message var lo and send obj data(childmsg) to message var 
+
+interpolate this message in html to render data in ui 
+
+childCompData
+==============
+	this childcomponent data declare in child component ts file 
+
+oit 
+
+*********it means we access obj data ***************
+childCompData: "this is child component data"
+postPara: "app-multidata"
+postTitle: "component_relation"

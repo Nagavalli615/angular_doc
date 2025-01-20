@@ -1,0 +1,10 @@
+PASS DATA BETWEEN TWO COMPONENTS:
+================================
+create 2 components header,navbar 
+
+DATA FLOW :
+==========
+we can transfor data from parent component to child component 
+and child component to parent component.
+		
+		
