@@ -1,0 +1,54 @@
+child to parent:
+================
+the child component uses the @Output() property to raise an event to 
+notify the parent of the change. to raise an event, an @output() must 
+hav ethe type of eventemitter , which is a class in @angular/core that 
+you use to emit custom events.
+
+
+diffrence between ViewChild() and @output():
+============================================
+ViewChild(): provides direct access to child component properties and methodes.
+
+output() : uses event emitters to notify the parent component about changes.
+
+
+
+
+
+
+
+
+if we click button in child component child component data send to parent.
+import Output, EventEmitter decoraters in child component.
+
+first we define eventemitter constructor 
+
+@Output() messageEvent = new EventEmitter(); 
+
+then write a message with click event when click button this child component data emit to message event 
+
+sendmessagetoparent(){
+  console.log('button click');
+  this.messageEvent.emit(this.fromchild);
+} lilke this 
+
+html:
+	<button (click)="sendmessagetoparent()">send data to parent when click</button>
+
+
+in parent component:
+===================
+html:
+====
+<app-output-eventemitter (messageEvent)="recivemessagefromchild($event)"></app-output-eventemitter>
+<h2>{{displayonui}}</h2>
+
+ts:
+===
+ //output_eventemitter -- fromchild
+ displayonui: string = '';
+ recivemessagefromchild(message:string){
+  console.log(message)
+  this.displayonui = message;
+ }

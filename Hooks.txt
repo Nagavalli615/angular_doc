@@ -1,0 +1,4 @@
+AfterViewInit:
+==============
+A Callback method that is invoked immediately after angular has coomplpeted initialization of a components view.
+it is invoked only once when the view is instantiated.
