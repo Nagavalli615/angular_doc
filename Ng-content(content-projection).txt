@@ -1,0 +1,47 @@
+ng-content:
+===========
+	the ng-content is neither a compoent nor dom element.
+instead, it is a special placeholder that tells angular where
+to render content. angulars compailer proccess all ng-content elements at build-time,
+can not insert,remove, or modify ng-content at run time.
+
+if we enter any data in between card compoennt in app component it doesnt 
+display we use ng-content tag in card compoent.html then the data displayed in app compoent.
+
+app-compoent.html:
+=================
+<app-card>
+  <p>hello</p>
+</app-card>
+
+card-compoent.html:
+===================
+<p>card works!</p>
+<ng-content></ng-content>
+
+
+multi-slot content projection:
+==============================
+
+if we use more than one ng-content tags data bind last used ng-content tag 
+in this way 
+we use selectors to identify distinctly.
+
+cardcomponent.html:
+==================
+	
+<div class="card">
+    <header> <ng-content select="[header]"></ng-content> </header>
+    <body> <ng-content select="[body]"></ng-content> </body>
+    <footer> <ng-content select="[footer]"></ng-content> </footer>
+</div>
+
+
+appcomponent.html:
+==================
+<app-card>
+  <span header>username</span>
+  <p body>birthdate</p>
+  <p footer>city</p>
+</app-card>
+

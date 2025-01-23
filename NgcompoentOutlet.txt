@@ -1,0 +1,24 @@
+programetically load component inside app compoent 
+
+appcompoennt.html
+=================
+<div *ngComponentOutlet="loadCompoent()"></div>
+
+appcompoennt.ts:
+================
+  loadCompoent(){
+    return PosListComponent
+  }
+
+
+****another method to load compoent programetically with injections****
+
+ts:
+===
+ constructor(private viewContainerRef : ViewContainerRef){}
+
+  loadcompoentbutton(){
+    this.viewContainerRef.createComponent(PosListComponent)
+  }
+
+<button (click)="loadcompoentbutton()">click for load compoent</button>

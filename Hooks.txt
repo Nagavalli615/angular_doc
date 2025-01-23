@@ -1,3 +1,43 @@
+life cycle hooks:
+================
+	life cycle hooks are special methods provided by angular that allows
+us to tap into diffrent stage of a components lifecycle. from the moment a
+compoent is created to the moment it is destroyed, angular provides hooks
+that let us run custom logic at specific times.
+
+
+we have 8 diff life cycle hooks available in angular
+
+ngOninit:
+*********
+	called once after the component is intialized.
+ngonChanges:
+***********
+	Called every time an input property changes.
+ngDoCheck:
+**********
+	called during every change detection run.
+ngAfterContentInit:
+*******************
+	called once after the components content has been initialized.
+ngAfterContentChecked:
+*********************
+	Called after every check of the components content.
+ngAfterViewInit:
+****************
+	called once after the components view has been initialized.
+
+ngAfterViewChecked:
+******************
+	called after every check of the components view.
+ngOndestroy:
+***********
+	called just before the component is destroyed.
+
+
+
+
+
 AfterViewInit:
 ==============
 A Callback method that is invoked immediately after angular has coomplpeted initialization of a components view.
