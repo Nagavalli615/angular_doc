@@ -1,0 +1,62 @@
+in angular, built-in pipes are predefined,ready-to-use filters or transformations
+that can be applied to data in templates.pipes allow you to easily modify the display 
+of data in an angular template without haveing to write complex logic or code.
+
+
+
+Uppercase-pipe:
+===============
+	transforms text to uppercase.
+lowercase:
+==========
+	transforms text to lowercase.
+currency pipe:
+=============
+	formats a number as a currency.
+decimalpipe:
+===========
+	formats a number as a decimal number.
+percent pipe:
+============
+	converts a number into a percentage format.
+json pipe:
+========== 
+	converts an object to a json string.
+		{{ myObject | json }}
+slice pipe:
+==========
+	extract a slice from an array.
+		{{ 'Angular' | slice:0:3 }} -- Ang
+Async pipe:
+==========
+	subscribe to an observable or promise and returns the latest value it emits.
+		<div>{{ observableData | async }}</div>
+chaining pipes:
+==============
+	th eability to link multiple pipes togeather in a sequence, where the output of one 
+pipe is used as the input for the next.
+
+<h1>{{userObj | json  | lowercase | uppercase}}</h1>
+
+order plays a crutioal role while working on chaining pipes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

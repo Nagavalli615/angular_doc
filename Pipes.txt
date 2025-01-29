@@ -1,0 +1,35 @@
+simply, pipes are a way to transform data directly in your templates.think of them as littile tools
+that take in some data, do some processing on it,and then return a nicely formatted output right,
+
+
+**********************************************************************
+angular pipes allows its users to chage the format in which data is being displayed on the screen.
+for instance, consider the date format. dates can be represented in multiple ways, and 
+the user can decide which one to use the help of angular pipes.
+
+
+in angular we have 2 types of pipes .
+
+1. buit in pipes.
+2. custom pipes.
+
+buit-in pipes:
+=============
+	in angular, built-in pipes are pre-defined functions that allow you to transform data directly within your templates.
+prpoviding a way to format dates,numbers,currencies,text and more.without 
+writing complex logics in your component code;
+essentially they let you manipulate data before displaying it to the user,makeing your templates cleaner and more readable.
+
+
+custom pipes:
+============
+in angular, a custom pipe is a reusable function that allow you to transform data within your application templates, creating a specific format 
+or modification to the data that isnt proivded by the buit-in pipes.
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+
+
+

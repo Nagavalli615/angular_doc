@@ -1,0 +1,2 @@
+to create a custome pipe 
+	ng g p pipename
