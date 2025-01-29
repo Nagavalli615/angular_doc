@@ -1,0 +1,21 @@
+		why do we need ngOninit most?
+
+INITIALIZATION:
+==============
+
+	its the perfect place to initialize your components data.
+
+API CALLS:
+==========
+
+	if you need to fetch data from a server when your component loads,
+onNginit is you'd typically do that.
+
+COMPLEX SETUP:
+=============
+	any complex setup that shoudnt be in the constructor can go here.
+
+
+
+ngOninit is called only once in the components lifecycle, right-after the component 
+has been initialized.

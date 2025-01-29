@@ -1,0 +1,31 @@
+this ngOnchanges hook triggerd every time when Input() property change.
+
+parents.ts:
+===========
+user:string= 'valli';
+
+  namechange(){
+    this.user = 'nagavalli'
+  }
+
+parent.html:
+===========
+<app-ng-onchange [puser]="user"></app-ng-onchange>
+<button (click)="namechange()">click to change name</button>
+
+
+child.ts:
+=========
+export class NgOnchangeComponent implements OnChanges{
+
+  @Input() puser:string = '';
+
+  ngOnChanges() {
+    console.log('triggerd onchanges on input');
+  }
+}
+
+child.html:
+===========
+<p>ng-onchange works!</p>
+<h1>{{puser}}</h1>

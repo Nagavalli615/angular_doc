@@ -1,0 +1,46 @@
+in angular, constructor are used to inject dependencies,
+such as services or other components, into a component.
+
+Constructor () special methode in class that gets triggerd automatically
+when an instance of the class is created.
+
+constructor() in angular terms, it is the first method thats called when a 
+component is instansiated.
+
+this is bydefault method comes from typescript.
+
+constructor should be light waight.
+avoid complex logics or havey computations 
+use constructor only for injecting dependencyies.
+avoid async oprations dont make http calls inside the constructor methode.
+dont access the dom elements inside this constructor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

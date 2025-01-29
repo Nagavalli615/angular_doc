@@ -34,6 +34,26 @@ ngOndestroy:
 ***********
 	called just before the component is destroyed.
 
+========================================================================
+=======================================================================
+
+				ngOnchange
+				**********
+called every time an input property changes.
+
+
+example:sociale media profile pic changes 
+when we change profile every time those changes displayed ontime.
+
+
+				ngOninit
+				********
+called once after the component is initialized.
+
+ngOninit is called only once in the components lifecycle, right-after the component 
+has been initialized.
+
+
 
 
 

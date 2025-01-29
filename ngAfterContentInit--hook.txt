@@ -1,0 +1,5 @@
+l.called once after the component's content has been initialized.
+
+in angular, ngafterContentinit is a life cycle hook that is calle donce after a 
+components projected content has been fully initialized, allowing you to access and 
+manipulating that content within the components logic once its available in the view.

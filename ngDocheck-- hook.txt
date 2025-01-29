@@ -1,0 +1,10 @@
+ngDoCheck:
+==========
+called during every change detection run.
+
+
+1.ngDpoCheck is custom change detection approach.its allow u to implement your 
+  own custome change detection
+2.its usefull when angular default change detection  might misschanges in
+complex objects of arrays.
+3. you can use it to track our open change detections run

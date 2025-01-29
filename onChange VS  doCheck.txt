@@ -1,0 +1,19 @@
+onChanges():
+============
+	its only gets called when only input properties changed.
+doCheck():
+=========
+	dCheck is part of changeDetection mechanisam.
+it is called during every change detection run.
+
+
+
+ngOnchanges():
+============
+	ngOnchanges is called when a value bound to an input has changed so you can
+runm custom code when an input has changed.
+
+ngDoCheck:
+==========
+	DoCheck is called when change detection runs so you can implement 
+your custom change detection action.

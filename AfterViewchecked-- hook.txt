@@ -1,0 +1,7 @@
+calle after evry check of the compoennts view.
+
+trigger every time the view changes.
+
+ngAfterViewChecked is that since it runs frequently, it can impact performance  if you are doing heavy computations or complex
+DOM manipulations with in  this hook.
+

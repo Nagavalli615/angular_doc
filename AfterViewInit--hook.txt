@@ -1,0 +1,15 @@
+callel donce after the components view has been initialized.
+it only run once during the components life cycle.
+
+a lifecycle hook that is called after angular has fully initialized a
+components view.define an ngAfterViewinit() method to handle any 
+additional initialization tasks.onInitAfterContentInitLifecycle hook guide.
+
+triggerd after dom fully available.
+interact with your components view after its been fully loaded.
+
+ngAftetrViewInit is a powerful tool in your angular toolkit.whenever you need to intract 
+with your components view or access child components once everything is loaded,this is 
+the hook to use. it run only once during the ocmponent life cycle.
+
+

@@ -1,0 +1,18 @@
+called after every check of the components content.
+
+in angular, aftercontentChecked is a lifecycle hook thats called 
+after angular checks the content projected into a component.
+
+keep an eye on content that might change over time.
+
+
+ngAfterContentChecked():
+=======================
+	powerful way to track changes in projected content and react accordingly.
+whether youare building complex UI components or just need more control over
+content projection, understanding when and how to use ngAfterChecked can really 
+level up your angular skills
+
+
+
+
