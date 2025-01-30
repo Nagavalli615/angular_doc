@@ -1,0 +1,2 @@
+dependency injection in angular is a design pattren that provides dependencies to 
+components and services instead of creating them internally.

@@ -1,0 +1,44 @@
+a services in angular is a class that provides specific functionality across 
+multiple components in your application.
+services are designed to handle tasks like data fetching, business logic,logging,
+or nay operation that should be shared across components.
+
+
+create service manually 
+like create a folder and create a file with ts extention 
+
+
+ProvideIn:root --> angular registers it at the root level, meaning it creates just one
+instance of the service that can be shared across the whole app.
+
+we dont have to manually create new instance or worry about passing services around between components.
+
+making sure that were always working with single ,shared instance of the service. this keeps our app 
+fast and memory-efficicent.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

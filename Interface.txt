@@ -1,0 +1,41 @@
+interfaces are a feature of typescript that allows us to define the structure or shape of an 
+object and specify the properties and methodes that an object has or should have.
+their primary function is type checking and aiding devlopers iin catching type-related errors during 
+development.
+
+use interface keyword to define interfaces.
+
+ex:
+===
+	export interface post{}
+when define array generally pass any type.
+when use interface we use 
+posts:array<post>{}
+like above that post interface used to if we did any mistake in array values it throws tyoe-error
+
+
+we can use this interface in any file by import.
+
+2nd approach:
+=============
+	generate interface by useing angular cli 
+		
+		ng g interface interface-name.
+
+if we want any other optional fields in interface just use ? after key 
+
+export interface User {
+  name: string,
+  id:string,
+  city:string,
+  job ?:string
+} like this
+
+
+
+
+
+
+
+
+
