@@ -1,0 +1,20 @@
+TEMPLATE-DRIVEN FORM:
+======================
+	a template-driven form is the simpleast way to build a form in angular.
+it uses angulars two-way databinding directive(ngModel) to create and manage the undelaying form instance.
+additionally as theh name suggests,a template form is mainly driven the view component.
+
+
+form-group:
+==========
+	a formgroup aggregates tthe values of each child formcontrol into one object,with each 
+control name as the key.it calculates its status by reducing the status values of its children.
+for example, if one of the controls in a group is invalid, the entire group becomes invalid.
+
+
+form-control:
+============
+	in angular, a form control is a class that tracks the value and validation status of a form input element.
+
+use ngModel for getting values in form group 
+
